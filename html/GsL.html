@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>GsL</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body class="wikidpad">
+<span class="wikidpad parent-nodes">parent nodes: <span class="wikidpad parent-node"><a href="GsL.html" class="wikidpad">GsL</a></span> | <span class="wikidpad parent-node"><a href="WikiSettings.html" class="wikidpad">WikiSettings</a></span><br class="wikidpad" /><br class="wikidpad" /></span>
+<a name=".h0" class="wikidpad"></a><h1 class="wikidpad heading-level1"><span class="wikidpad wiki-link"><a href="GsL.html" class="wikidpad">GsL</a></span> : Global Script Library</h1>
+<a name=".h31" class="wikidpad"></a><h3 class="wikidpad heading-level3">FUNCTIONS:</h3>
+<a name=".h46" class="wikidpad"></a><h4 class="wikidpad heading-level4">function 1 : ## Add empty Tag </h4>
+<br class="wikidpad" />
+<a name=".h115" class="wikidpad"></a><h4 class="wikidpad heading-level4">function 2: ## Add Category text</h4>
+<br class="wikidpad" />
+<a name=".h190" class="wikidpad"></a><h4 class="wikidpad heading-level4">function 3: ## Add Journal Header </h4>
+  <br class="wikidpad" />
+<br class="wikidpad" />
+<a name=".h1006" class="wikidpad"></a><h4 class="wikidpad heading-level4">function 4:  ## Add TimeStamp:</h4>
+<br class="wikidpad" />
+<a name=".h1211" class="wikidpad"></a><h4 class="wikidpad heading-level4">function 5: ## Add Alias</h4>
+ <br class="wikidpad" />
+<br class="wikidpad" />
+<a name=".h1321" class="wikidpad"></a><h4 class="wikidpad heading-level4">function 6:  ## Add Line of '-----------------' :</h4>
+  <br class="wikidpad" />
+<br class="wikidpad" />
+<hr class="wikidpad" />
+<a name=".h1489" class="wikidpad"></a><h3 class="wikidpad heading-level3">UNUSED:</h3>
+DISABLE
+++++ function : ## Toggle Folding
+&lt;% :
+editor.ToggleFold(editor.LineFromPosition(editor.GetCurrentPos()))  
+%&gt;
+
+++++ function ## Add Line of '-----------------' :
+&lt;% 7: 
+editor.AddText('-'*70+'\n')
+%&gt;  
+
+++++ function ## Add date stamp ..eg  20080808 
+&lt;% 8:
+from time import strftime
+editor.AddText(strftime("%Y%m%d"))
+%&gt;
+
+see DateAttribute ..
+++++ function ## Add time stamp  .. eg 23:15
+&lt;% 9:
+from time import strftime
+editor.AddText(strftime("%Hh%M:"))
+%&gt;
+
+++++ function ## Toggle Folding
+&lt;% 5:
+editor.ToggleFold(editor.LineFromPosition(editor.GetCurrentPos()))  
+%&gt;
+
+++++ function ## Encode file paths
+&lt;% 5: lib.encodeSelection(editor) %&gt;
+
+++++ function ## alias text...
+editor.AddText("[alias:")
+
+<br class="wikidpad" />
+<hr class="wikidpad" />
+<span class="wikidpad todo">project.WikidPad: scripts</span><br class="wikidpad" />
+<span class="wikidpad property attribute">[tag: wikidpad]</span><span class="wikidpad property attribute">[tag: scripts]</span>    </body>
+</html>
