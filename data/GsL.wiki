@@ -1,0 +1,102 @@
+﻿+ GsL : Global Script Library
+
++++FUNCTIONS:
+
+++++ function 1 : ## Add empty Tag 
+<% 1: editor.AddText("[tag:")%>
+
+++++ function 2: ## Add Category text
+<% 2:
+editor.AddText('Category')
+%>
+
+++++ function 3: ## Add Journal Header 
+<% 3: 
+lateSleep = True #False
+formatstr = "[LOG.%Y.%m:%d] - %A: \n"
+
+
+from time import strftime
+import datetime
+
+dtNow = datetime.datetime.now()
+editor.AddText('-'*70+'\n')           #changed [LOG.2008.08:07]
+
+if dtNow.hour < 2  and lateSleep:
+    # guess that i havent slept yet if its before 2am. therefore use yesterdays date:
+    day = datetime.timedelta(days=1)
+    yest = dtNow - day
+    ### - NOT IN USE ANYMORE -- editor.AddText('anchor: %s\n' %yest.strftime("%d"))
+    editor.AddText(yest.strftime(formatstr))
+else: 
+    # guess that i have slept yet if its after 1.59am. therefore use todays date , or not late-sleeping    
+    ### - NOT IN USE ANYMORE -- editor.AddText('anchor: %s\n' %dtNow.strftime("%d"))    
+    editor.AddText(dtNow.strftime(formatstr))
+%>  
+
+++++ function 4:  ## Add TimeStamp:
+<% 4:
+## NewtWiki relative link to page
+#editor.AddText("wikirel://../NewtWiki/NewtWiki.wiki?page=")
+
+from time import strftime
+editor.AddText(strftime("%H:%M: "))
+
+%>
+
+++++ function 5: ## Add Alias
+<% 5:
+editor.ToggleFold(editor.LineFromPosition(editor.GetCurrentPos()))  
+%> 
+
+++++ function 6:  ## Add Line of '-----------------' :
+<% 6: 
+editor.AddText('-'*70+'\n')
+%>  
+
+
+----------------------------------------------------------------------
++++UNUSED:
+
+<< 
+DISABLE
+++++ function : ## Toggle Folding
+<% :
+editor.ToggleFold(editor.LineFromPosition(editor.GetCurrentPos()))  
+%>
+
+++++ function ## Add Line of '-----------------' :
+<% 7: 
+editor.AddText('-'*70+'\n')
+%>  
+
+++++ function ## Add date stamp ..eg  20080808 
+<% 8:
+from time import strftime
+editor.AddText(strftime("%Y%m%d"))
+%>
+
+see DateAttribute ..
+++++ function ## Add time stamp  .. eg 23:15
+<% 9:
+from time import strftime
+editor.AddText(strftime("%Hh%M:"))
+%>
+
+++++ function ## Toggle Folding
+<% 5:
+editor.ToggleFold(editor.LineFromPosition(editor.GetCurrentPos()))  
+%>
+
+++++ function ## Encode file paths
+<% 5: lib.encodeSelection(editor) %>
+
+++++ function ## alias text...
+editor.AddText("[alias:")
+
+>>
+
+
+----------------------------------------------------------------------
+project.WikidPad: scripts
+[tag:wikidpad][tag:scripts]
