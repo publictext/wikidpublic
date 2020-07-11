@@ -1,2 +1,2 @@
-# wikidpublic
-A template wikidpad wiki hosted and available publicly
+# Wikid Public Pad
+A template WikidPad wiki hosted on GitHub and available publicly using GitHubPages
