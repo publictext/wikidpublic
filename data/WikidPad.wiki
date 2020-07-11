@@ -1,0 +1,12 @@
+﻿+ WikidPad
+
+WikidPad is a wiki-like notebook for storing your thoughts, ideas, todo lists, contacts, or anything else you can think of to write down.
+
+What makes WikidPad different from other notepad applications is the ease with which you can cross-link your information. Links in a wiki are created by typing in WikiWords. A WikiWord is mixed case word. TodoList? or JohnDoe are example WikiWords.
+
+see official pages at http://wikidpad.sourceforge.net/ and http://trac.wikidpad2.webfactional.com/ 
+also https://en.wikipedia.org/wiki/WikidPad
+
+WikidPad is implemented in, and using [[Python]]
+
+[tag:wikidpad]
