@@ -1,0 +1,54 @@
+[wiki_db]
+data_dir = data
+db_filename = 
+
+[main]
+wikiwidehistory_maxentries = 100
+footnotes_as_wikiwords = False
+versioning_storagelocation = 0
+last_wiki_word = WikidPublic
+hotkey_showhide_bywiki = 
+log_window_autoshow = Gray
+filestorage_identity_filenamemustmatch = False
+filestorage_identity_moddateisenough = False
+wikipagefiles_writefilemode = 0
+wikipagefiles_maxnamelength = 120
+trashcan_maxnoofbags = 200
+tabs_maxcharacters = 0
+trashcan_askondelete = True
+wiki_icon = 
+headingsasaliases_depth = 0
+wiki_mainarea_auiperspective = v1/5f09996b000227f000000002=*DocPagePresenter=WikidPublic=0=textedit\x7cwikipage/WikidPublic@layout2|name=dummy;caption=;state=67372030;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=338;besth=328;minw=338;minh=328;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;notebookid=-1;transparent=255|name=5f09996b000227f000000002;caption=;state=67372028;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1;notebookid=-1;transparent=255|dock_size(5,0,0)=202|
+wiki_name = WikidPublic
+tree_expandednodes_rememberduration = 2
+wikipagetitleprefix = 
+editor_text_mode = False
+wiki_onopen_rebuild = 0
+wiki_onopen_tabssubctrl = 
+wikipagetitle_fromlinktitle = False
+wiki_lastactivetabno = 0
+first_wiki_word = 
+wikipagefiles_gracefuloutsideaddandremove = True
+indexsearch_enabled = False
+wiki_lasttabssubctrls = textedit
+template_pagenamesre = ^template/
+wikipagetitle_creationmode = 1
+tabhistory_maxentries = 25
+tree_expandednodes_descriptorpathes_main = wikipage/WikidPublic
+wikipagetitle_headinglevel = 2
+wiki_wikilanguage = wikidpad_default_2_0
+tree_force_scratchpad_visibility = True
+further_wiki_words = 
+tree_expandednodes_descriptorpathes_views = 
+tree_last_root_wiki_word = WikidPublic
+db_pagefile_suffix = .wiki
+filestorage_identity_moddatemustmatch = False
+trashcan_storagelocation = 0
+wiki_database_type = original_sqlite
+wikipagefiles_asciionly = True
+indexsearch_formatno = 1
+versioning_completesteps = 10
+wiki_readonly = False
+export_default_dir = 
+filesignature_timecoarsening = 0
+
