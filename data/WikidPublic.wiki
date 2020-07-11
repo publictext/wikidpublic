@@ -1,5 +1,5 @@
-+ Wikid Public Pad
+﻿+ Wikid Public Pad
 A template WikidPad wiki hosted on GitHub and available publicly using GitHubPages
 
-
-	* WikiSettings
+[[Index]]
+* WikiSettings

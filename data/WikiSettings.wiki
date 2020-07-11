@@ -18,9 +18,6 @@ These are your default global settings.
 
 [global.importance.high.color: FIREBRICK]
 
-\[tree_position: 50]
 [color: GRAY]
-\[bold:true]
-
 [global.font: Helvetica Neue]
 [global.font: Helvetica]
