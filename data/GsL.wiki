@@ -55,47 +55,6 @@ editor.AddText('-'*70+'\n')
 %>  
 
 
-----------------------------------------------------------------------
-+++UNUSED:
-
-<< 
-DISABLE
-++++ function : ## Toggle Folding
-<% :
-editor.ToggleFold(editor.LineFromPosition(editor.GetCurrentPos()))  
-%>
-
-++++ function ## Add Line of '-----------------' :
-<% 7: 
-editor.AddText('-'*70+'\n')
-%>  
-
-++++ function ## Add date stamp ..eg  20080808 
-<% 8:
-from time import strftime
-editor.AddText(strftime("%Y%m%d"))
-%>
-
-see DateAttribute ..
-++++ function ## Add time stamp  .. eg 23:15
-<% 9:
-from time import strftime
-editor.AddText(strftime("%Hh%M:"))
-%>
-
-++++ function ## Toggle Folding
-<% 5:
-editor.ToggleFold(editor.LineFromPosition(editor.GetCurrentPos()))  
-%>
-
-++++ function ## Encode file paths
-<% 5: lib.encodeSelection(editor) %>
-
-++++ function ## alias text...
-editor.AddText("[alias:")
-
->>
-
 
 ----------------------------------------------------------------------
 project.WikidPad: scripts

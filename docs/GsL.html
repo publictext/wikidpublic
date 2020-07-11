@@ -24,43 +24,6 @@
 <a name=".h1321" class="wikidpad"></a><h4 class="wikidpad heading-level4">function 6:  ## Add Line of '-----------------' :</h4>
   <br class="wikidpad" />
 <br class="wikidpad" />
-<hr class="wikidpad" />
-<a name=".h1489" class="wikidpad"></a><h3 class="wikidpad heading-level3">UNUSED:</h3>
-DISABLE
-++++ function : ## Toggle Folding
-&lt;% :
-editor.ToggleFold(editor.LineFromPosition(editor.GetCurrentPos()))  
-%&gt;
-
-++++ function ## Add Line of '-----------------' :
-&lt;% 7: 
-editor.AddText('-'*70+'\n')
-%&gt;  
-
-++++ function ## Add date stamp ..eg  20080808 
-&lt;% 8:
-from time import strftime
-editor.AddText(strftime("%Y%m%d"))
-%&gt;
-
-see DateAttribute ..
-++++ function ## Add time stamp  .. eg 23:15
-&lt;% 9:
-from time import strftime
-editor.AddText(strftime("%Hh%M:"))
-%&gt;
-
-++++ function ## Toggle Folding
-&lt;% 5:
-editor.ToggleFold(editor.LineFromPosition(editor.GetCurrentPos()))  
-%&gt;
-
-++++ function ## Encode file paths
-&lt;% 5: lib.encodeSelection(editor) %&gt;
-
-++++ function ## alias text...
-editor.AddText("[alias:")
-
 <br class="wikidpad" />
 <hr class="wikidpad" />
 <span class="wikidpad todo">project.WikidPad: scripts</span><br class="wikidpad" />
